@@ -7,7 +7,24 @@
   	USD, GBP, JPY, EUR, AUD, CAD, DKK, NOK,
 	  ZAR, SEK, CHF, JUD, LBP, EGP, ILS.
 
-## Implimentation
-  The app fatch the coversion rates from 'Israel Bank' server when upload.
-  With mathematical formula the value convert from one to another
+## Components
+### CalculatorGUI 
+	Client visual view
+		- Present CurrenciesTable for all currency
+### TableGUI 
+	Visual table view for GUI
+### CurrencyTable
+	Abstract tabel, Holds all the information on TableGUI
+### Currency
+	Instruction for currency, holds fields:
+		name, unit, code, country, change
+### XmlParse
+	Hendle Parsing information that came from local storage
+		- xml file name is 'currency.xml'
+		- xml file holds data on currencies
+		- every opening, the app download relevant version of xml
+
+## Project Status
+	Done
+		
   
